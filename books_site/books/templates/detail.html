@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{book.title}}</title>
+</head>
+<body>
+    <h1>{{ book.title }}</h1>
+
+    <h3>Number of pages: {{book.num_pages}}</h3>
+    <h3>Publish Date: {{book.date_published}}</h3>
+    <h3>Author: {{book.author}}</h3>
+    {% for tag in book.tags.all %}
+    <h3>Tags: {{tag.name}}</h3>
+    {% endfor %}
+</body>
+</html>
