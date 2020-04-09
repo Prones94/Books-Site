@@ -10,4 +10,4 @@
 
 3. How would we filter for all _authors_ who have _written_ books containing the word 'Django'?
 
-   `Author.objects.filter(book__title='Django')`
+   `Author.objects.filter(book__title__contains='Django')`
